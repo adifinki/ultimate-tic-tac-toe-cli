@@ -101,6 +101,7 @@ class Controller:
         )
 
     def get_user_input(self):
+        print(f"its `{self.turn.value}` turn")
         if self.last is None:
             location = int(input("choose a board"))
             while not self.validate_board_choice(location):
