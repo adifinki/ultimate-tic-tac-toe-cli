@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ultimate_tic_tac_toe_cli"
+version = "0.1.0"
+description = ""
+authors = ["adifinkel <adifin24@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+start-game = "ultimate_tic_tac_toe_cli.main:play"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
